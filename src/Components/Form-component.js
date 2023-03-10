@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setUserDataInput } from "../Redux/Features/form-slice";
 
+import { ConfirmationPage } from "./Comfirnation-page";
+
 export const FormComponent = () => {
   const [userInputs, setUserInputs] = useState({
     name: "",
@@ -67,7 +69,7 @@ export const FormComponent = () => {
           </form>
         </div>
       ) : (
-        <h1 className="thanks">Thanks for providing us your information!</h1>
+        <ConfirmationPage />
       )}
     </div>
   );

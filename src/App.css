@@ -55,4 +55,11 @@
   left: 50%;
   letter-spacing: 5px;
   transform: translate(-50%, -50%);
+  text-align: left;
+}
+.selector {
+  margin-top: 1em;
+}
+.selector h2 {
+  padding: .3em 0;
 }
