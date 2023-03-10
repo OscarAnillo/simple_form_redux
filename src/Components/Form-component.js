@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import { useDispatch } from "react-redux";
+import { setUserDataInput } from "../Redux/Features/form-slice";
+
 export const FormComponent = () => {
   const [userInputs, setUserInputs] = useState({
     name: "",
@@ -7,6 +10,7 @@ export const FormComponent = () => {
     password: "",
   });
   const [submitted, setIsSubmitted] = useState(false);
+  const dispatch = useDispatch();
 
   const changeHandler = (e) => {
     const { name, value } = e.target;
@@ -21,6 +25,7 @@ export const FormComponent = () => {
       alert("Please provide all values!");
       return;
     }
+    dispatch(setUserDataInput({ ...userInputs }));
     setUserInputs({ name: "", email: "", password: "" });
     setIsSubmitted(true);
   };

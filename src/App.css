@@ -37,14 +37,15 @@
   border: none;
   border-radius: 6px;
   color: #fff;
-  cursor: pointer;
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 1em 1.7em;
-  transition: background .5s;
+  transition: .5s;
 }
 .form button:hover {
   background: linear-gradient(to bottom, coral, rgb(233, 42, 42));
+  cursor: pointer;
+  transition: .5s;
 }
 
 .thanks {
