@@ -63,3 +63,19 @@
 .selector h2 {
   padding: .3em 0;
 }
+
+.thanks button {
+  background: coral;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 1em 1.7em;
+  transition: .5s;
+}
+.thanks button:hover {
+  background: linear-gradient(to bottom, coral, rgb(233, 42, 42));
+  cursor: pointer;
+  transition: .5s;
+}

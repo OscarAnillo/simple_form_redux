@@ -40,7 +40,7 @@ export const FormComponent = () => {
         <div className="div-form">
           <form
             method="POST"
-            autoComplete="off"
+            autoComplete="new-password"
             className="form"
             onSubmit={submitHandler}
           >
@@ -69,7 +69,7 @@ export const FormComponent = () => {
           </form>
         </div>
       ) : (
-        <ConfirmationPage />
+        <ConfirmationPage setIsSubmitted={setIsSubmitted} />
       )}
     </div>
   );

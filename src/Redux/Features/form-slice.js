@@ -15,8 +15,15 @@ export const formSlice = createSlice({
     setUserDataInput(state, action) {
       state.userInput = action.payload;
     },
+    setClearStatus(state) {
+      state.userInput = {
+        name: "",
+        email: "",
+        password: "",
+      };
+    },
   },
 });
 
-export const { setUserDataInput } = formSlice.actions;
+export const { setUserDataInput, setClearStatus } = formSlice.actions;
 export default formSlice.reducer;
