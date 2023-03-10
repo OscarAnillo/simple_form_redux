@@ -31,7 +31,12 @@ export const FormComponent = () => {
       <p>Web UI Developer</p>
       {!submitted ? (
         <div className="div-form">
-          <form autoComplete="off" className="form" onSubmit={submitHandler}>
+          <form
+            method="POST"
+            autoComplete="off"
+            className="form"
+            onSubmit={submitHandler}
+          >
             <input
               type="text"
               placeholder="Name"
